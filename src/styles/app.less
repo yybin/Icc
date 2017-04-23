@@ -136,4 +136,165 @@ a {
 
     }
 }
+.anlijiedu{
+    overflow: auto;
+    margin: 30px auto;
+    box-sizing: border-box;
+    border: 1px solid #c8c7c9;
+    border-top: none;
+    border-left: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #666;
+    padding:50px;
+    >div{
+        margin-bottom: 20px;
+        .title{
+            color: red;
+            height: 40px;
+            line-height: 40px;
+        }
+        .content{
+            border-top: 1px solid red;
+            padding-top: 20px;
+            h4{
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                color: #666;
+                font-size:24px;
+            }
+            p {
+                font-size: 16px;
+                color: #999;
+                line-height: 32px;
+                text-indent: 32px;
+            }
+            .right{
+                width: 340px;
+                float: right;
+            }
+            .left{
+                width: 870px;
+                float: left;
+                overflow: auto;
+                box-sizing: border-box;
+                padding-top:20px;
+                padding-right: 20px;
+                p{
+                    line-height: 50px;
+                }
+                .center{
+                    text-align: center;
+                    color: red;
+                    line-height: 50px;
+                }
+                .marginTop{
+                    margin-top: 50px;
+                }
+            }
+            .right{
+                figcaption{
+                    text-align: center;
+                }
+            }
 
+        }
+        .border{
+            overflow: auto;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        ul{
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            li{
+                list-style:disc;
+                text-align: left;
+                line-height: 24px;
+                font-size: 14px;
+                color: #999;
+            }
+            p{
+                position: absolute;
+                top: 0;
+                line-height: 24px;
+                color: red;
+                font-size: 16px;
+                display: inline-block;
+                left: -100px;
+            }
+        }
+    }
+    .center{
+        text-align: center;
+    }
+}
+.duteyoushi {
+    .item {
+        clear: both;
+        height: 500px;
+        figure{
+            display: inline-block;
+            width: 40%;
+            float: left;
+            text-align: center;
+            img{
+                display: inline-block;
+
+            }
+        }
+        ul{
+            display: inline-block;
+            width: 40%;
+            float: right;
+            margin-top: 80px;
+            line-height: 50px;
+            font-size: 16px;
+            color: #666;
+        }
+        .title{
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            height: 60px;
+            line-height: 60px;
+            span{
+                display: inline-block;
+                position: relative;
+                color: #cc3333;
+                &:before{
+                    content: ' ';
+                    position: absolute;
+                    left: -100px;
+                    top:30px;
+                    display: inline-block;
+                    width: 60px;
+                    border-bottom:1px solid #ccc ;
+                }
+                &:after{
+                    content: ' ';
+                    position: absolute;
+                    right: -100px;
+                    top:30px;
+                    display: inline-block;
+                    width: 60px;
+                    border-bottom:1px solid #ccc ;
+                }
+            }
+        }
+        &:nth-child(even) {
+            background: #e8e8e8;
+            figure{
+                float: right;
+            }
+            ul{
+                float: left;
+                padding-left: 100px;
+                box-sizing: border-box;
+
+            }
+        }
+
+    }
+}
