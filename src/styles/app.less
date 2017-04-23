@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    background: #fff;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.main-width{
+    width: 1320px;
+    margin: 0px auto;
+}
+.top{
+    background: #676568;
+    color: #fff;
+    height:30px;
+    line-height:30px;
+}
+.nav{
+    height: 90px;
+    background: url("../images/logo.jpg") no-repeat left center;
+    ul {
+        margin-left: 160px;
+        padding-top: 50px;
+        font-size: 14px;
+        width: 870px;
+        float: left;
+        li {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            border-right: 1px solid red;
+            &:last-child{
+                border: none;
+            }
+            a {
+                display: inline-block;
+                color: #333;
+            }
+        }
+    }
+    img {
+        display: inline-block;
+        float: right;
+        width: 285px;
+    }
+}
+.adv-img{
+    text-align: center;
+    img{
+        width:1920px;
+        height:340px;
+        display: inline-block;
+    }
+}
+.footer {
+    clear: both;
+    box-sizing: border-box;
+    height: 130px;
+    background: #676568;
+    padding: 30px;
+    font-size: 12px;
+    color: #b9b7ba;
+    text-align: center;
+    p {
+        &:first-child{
+            height: 20px;
+            line-height: 20px;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            width: 80px;
+            color: #fff;
+            border-right:1px solid #fff;
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}
+.redianshijian{
+    overflow: auto;
+    margin: 30px auto;
+    box-sizing: border-box;
+    border: 1px solid #c8c7c9;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #666;
+    padding:50px;
+    .redian-item{
+        overflow: auto;
+        width:1220px ;
+        float: left;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        >div{
+            display: inline-block;
+            height: 215px;
+            width: 840px;
+            float: right;
+            >div{
+                color: #b9b7ba;
+                line-height: 24px;
+            }
+            h4{
+                height: 40px;
+                line-height: 40px;
+                font-weight: normal;
+                font-size: 14px;
+                color:#676568;
+                border-bottom: 1px solid #ccc;
+                span{
+                    float: right;
+                }
+            }
+        }
+        img{
+            display: inline-block;
+            width: 356px;
+            height: 215px;
+            float: left;
+        }
+        border-bottom: 1px solid red;
+        &:first-child{
+            margin-top: 0px;
+        }
+        &:last-child{
+            border: none;
+        }
+
+    }
+}
+
