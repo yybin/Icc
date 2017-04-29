@@ -365,4 +365,119 @@ a {
         }
     }
 }
+.gongsijieshao{
+    box-sizing: border-box;
+    border: 1px solid #c8c7c9;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #666;
+
+    margin: 20px auto;
+    overflow: auto;
+    h4{
+        height: 50px;
+        line-height: 50px;
+        padding:0 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: normal;
+        color: #cc3333;
+    }
+    .info-top{
+        padding:0 20px;
+        clear: both;
+        font-size: 14px;
+        line-height: 40px;
+        text-indent: 28px;
+        img{
+            display: inline-block;
+            float: left;
+            width: 320px;
+            margin-right: 30px;
+        }
+    }
+    dl {
+        padding:0 20px;
+        clear: both;
+        line-height: 40px;
+        font-size: 14px;
+        color: #676568;
+        dt{
+            height: 50px;
+            line-height: 50px;
+            color: #676568;
+            font-weight: bold;
+        }
+        dd{
+            text-indent: 28px;
+        }
+    }
+    .info-img{
+        text-align: center;
+        figure{
+            display: inline-block;
+            width: 300px;
+            padding: 0;
+            border: 1px solid #ccc;
+            img{
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                width: 100%;
+            }
+            figcaption{
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+            &:nth-child(2){
+                margin: 0 34px;
+            }
+        }
+    }
+    .info-title{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        background: #e8e8e8;
+        text-align: center;
+        .title{
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            height: 60px;
+            line-height: 60px;
+            span{
+                display: inline-block;
+                position: relative;
+                color: #cc3333;
+                &:before{
+                    content: ' ';
+                    position: absolute;
+                    left: -100px;
+                    top:30px;
+                    display: inline-block;
+                    width: 60px;
+                    border-bottom:1px solid #ccc ;
+                }
+                &:after{
+                    content: ' ';
+                    position: absolute;
+                    right: -100px;
+                    top:30px;
+                    display: inline-block;
+                    width: 60px;
+                    border-bottom:1px solid #ccc ;
+                }
+            }
+        }
+        figure{
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 300px;
+            figcaption{
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+}
 
