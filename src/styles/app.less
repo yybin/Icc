@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 .main-width{
-    width: 1320px;
+    width: 1024px;
     margin: 0px auto;
 }
 .top{
@@ -23,17 +23,18 @@ a {
     line-height:30px;
 }
 .nav{
-    height: 90px;
+    height: 60px;
     background: url("../images/logo.jpg") no-repeat left center;
+    background-size: 100px;
     ul {
-        margin-left: 160px;
-        padding-top: 50px;
+        margin-left: 100px;
+        padding-top: 26px;
         font-size: 14px;
-        width: 870px;
+        width: 760px;
         float: left;
         li {
             display: inline-block;
-            width: 80px;
+            width: 70px;
             text-align: center;
             border-right: 1px solid red;
             &:last-child{
@@ -48,14 +49,15 @@ a {
     img {
         display: inline-block;
         float: right;
-        width: 285px;
+        margin-top: 6px;
+        width: 160px;
     }
 }
 .adv-img{
     text-align: center;
     img{
-        width:1920px;
-        height:340px;
+        width:1700px;
+        height:260px;
         display: inline-block;
     }
 }
@@ -87,26 +89,28 @@ a {
 }
 .redianshijian{
     overflow: auto;
-    margin: 30px auto;
+    margin: 20px auto;
     box-sizing: border-box;
     border: 1px solid #c8c7c9;
     border-radius: 6px;
     box-shadow: 2px 2px 5px #666;
-    padding:50px;
+    padding:20px;
     .redian-item{
         overflow: auto;
-        width:1220px ;
+        width:984px ;
         float: left;
         padding-bottom: 20px;
         margin-top: 20px;
         >div{
             display: inline-block;
-            height: 215px;
-            width: 840px;
+            height: 180px;
             float: right;
+            width: 660px;
             >div{
                 color: #b9b7ba;
                 line-height: 24px;
+                wdith: 660px;
+                padding-right: 0;
             }
             h4{
                 height: 40px;
@@ -122,8 +126,8 @@ a {
         }
         img{
             display: inline-block;
-            width: 356px;
-            height: 215px;
+            width: 300px;
+            height: 200px;
             float: left;
         }
         border-bottom: 1px solid red;
@@ -138,14 +142,14 @@ a {
 }
 .anlijiedu{
     overflow: auto;
-    margin: 30px auto;
+    margin: 20px auto;
     box-sizing: border-box;
     border: 1px solid #c8c7c9;
     border-top: none;
     border-left: none;
     border-radius: 6px;
     box-shadow: 2px 2px 5px #666;
-    padding:50px;
+    padding:30px;
     >div{
         margin-bottom: 20px;
         .title{
@@ -161,27 +165,27 @@ a {
                 height: 50px;
                 line-height: 50px;
                 color: #666;
-                font-size:24px;
+                font-size:18px;
             }
             p {
-                font-size: 16px;
+                font-size: 12px;
                 color: #999;
-                line-height: 32px;
-                text-indent: 32px;
+                line-height: 24px;
+                text-indent: 24px;
             }
             .right{
-                width: 340px;
+                width: 280px;
                 float: right;
             }
             .left{
-                width: 870px;
+                width: 680px;
                 float: left;
                 overflow: auto;
                 box-sizing: border-box;
                 padding-top:20px;
                 padding-right: 20px;
                 p{
-                    line-height: 50px;
+                    line-height: 30px;
                 }
                 .center{
                     text-align: center;
@@ -195,6 +199,10 @@ a {
             .right{
                 figcaption{
                     text-align: center;
+                }
+                img{
+                    display: inline-block;
+                    width: 280px;
                 }
             }
 
@@ -233,7 +241,7 @@ a {
 .duteyoushi {
     .item {
         clear: both;
-        height: 500px;
+        height: 300px;
         figure{
             display: inline-block;
             width: 40%;
@@ -241,14 +249,14 @@ a {
             text-align: center;
             img{
                 display: inline-block;
-
+                width: 260px;
             }
         }
         ul{
             display: inline-block;
             width: 40%;
             float: right;
-            margin-top: 80px;
+            margin-top: 40px;
             line-height: 50px;
             font-size: 16px;
             color: #666;
@@ -295,6 +303,13 @@ a {
 
             }
         }
+        &:nth-child(odd){
+            figure{
+                img{
+                    width: 200px;
+                }
+            }
+        }
 
     }
 }
@@ -312,8 +327,8 @@ a {
             border-radius: 6px;
             min-height: 200px;
             position: relative;
-            font-size: 14px;
-            margin-top: 100px;
+            font-size: 12px;
+            margin-top: 80px;
             cursor: pointer;
             .img{
                 position: absolute;
@@ -334,11 +349,11 @@ a {
                 line-height: 50px;
             }
             .info{
-                font-size: 16px;
-                text-indent: 32px;
-                line-height: 32px;
+                font-size: 12px;
+                text-indent: 24px;
+                line-height: 24px;
                 letter-spacing: 1px;
-                padding: 0 32px;
+                padding: 0 12px;
             }
             &:hover{
                 background: #f0c1c1;
