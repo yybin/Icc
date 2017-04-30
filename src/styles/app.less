@@ -4,7 +4,7 @@
 }
 body{
     font-size: 12px;
-    background: #fff;
+    background: #e8e8e8;
 }
 ul li {
     list-style: none;
@@ -15,6 +15,7 @@ a {
 .main-width{
     width: 1024px;
     margin: 0px auto;
+
 }
 .top{
     background: #676568;
@@ -61,6 +62,36 @@ a {
         display: inline-block;
     }
 }
+.title{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    height: 60px;
+    line-height: 60px;
+    span{
+        display: inline-block;
+        position: relative;
+        color: #cc3333;
+        &:before{
+            content: ' ';
+            position: absolute;
+            left: -100px;
+            top:30px;
+            display: inline-block;
+            width: 60px;
+            border-bottom:1px solid #ccc ;
+        }
+        &:after{
+            content: ' ';
+            position: absolute;
+            right: -100px;
+            top:30px;
+            display: inline-block;
+            width: 60px;
+            border-bottom:1px solid #ccc ;
+        }
+    }
+}
 .footer {
     clear: both;
     box-sizing: border-box;
@@ -92,6 +123,7 @@ a {
     margin: 20px auto;
     box-sizing: border-box;
     border: 1px solid #c8c7c9;
+    background: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 5px #666;
     padding:20px;
@@ -143,6 +175,7 @@ a {
 .anlijiedu{
     overflow: auto;
     margin: 20px auto;
+    background: #fff;
     box-sizing: border-box;
     border: 1px solid #c8c7c9;
     border-top: none;
@@ -239,6 +272,7 @@ a {
     }
 }
 .duteyoushi {
+    background: #fff;
     .item {
         clear: both;
         height: 300px;
@@ -315,6 +349,7 @@ a {
 }
 /*服务团队*/
 .fuwutuandui{
+    background: #fff;
     >.item{
         padding: 20px 0;
         clear: both;
@@ -370,7 +405,7 @@ a {
     border: 1px solid #c8c7c9;
     border-radius: 6px;
     box-shadow: 2px 2px 5px #666;
-
+    background: #fff;
     margin: 20px auto;
     overflow: auto;
     h4{
@@ -388,6 +423,7 @@ a {
         font-size: 14px;
         line-height: 40px;
         text-indent: 28px;
+
         img{
             display: inline-block;
             float: left;
@@ -439,36 +475,7 @@ a {
         padding-bottom: 30px;
         background: #e8e8e8;
         text-align: center;
-        .title{
-            text-align: center;
-            font-size: 16px;
-            color: #333;
-            height: 60px;
-            line-height: 60px;
-            span{
-                display: inline-block;
-                position: relative;
-                color: #cc3333;
-                &:before{
-                    content: ' ';
-                    position: absolute;
-                    left: -100px;
-                    top:30px;
-                    display: inline-block;
-                    width: 60px;
-                    border-bottom:1px solid #ccc ;
-                }
-                &:after{
-                    content: ' ';
-                    position: absolute;
-                    right: -100px;
-                    top:30px;
-                    display: inline-block;
-                    width: 60px;
-                    border-bottom:1px solid #ccc ;
-                }
-            }
-        }
+
         figure{
             margin-bottom: 10px;
             display: inline-block;
@@ -480,4 +487,62 @@ a {
         }
     }
 }
+/*顾问团队*/
+.guwentuandui{
+    margin: 20px auto;
+    .jigou{
+        .item {
+            position: relative;
+            background: #fff;
+            &:first-child{
+                border-top:2px solid #cc3333;
+            }
+            &:after{
+                content: ' ';
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 30%;
+                height: 50px;
+                width: 6px;
+                background: #b9b7ba;
+                border-radius: 6px;
+            }
+            box-shadow: 2px 2px 5px #666;
+            overflow: auto;
+            margin-bottom: 20px;
+            figure{
+                display: inline-block;
+                float: left;
+                text-align: center;
+                padding-bottom: 20px;
+                img{
+                    display: inline-block;
+                    width: 200px;
+                }
+                figcaption{
 
+                }
+            }
+            >div{
+                overflow: auto;
+                padding-top: 20px;
+                color: #999;
+                h5{
+                    font-weight: normal;
+                }
+                >div{
+                    line-height: 24px;
+                    box-sizing: border-box;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+    .team{
+        figure{
+            width: 300px;
+            background: #fff;
+        }
+    }
+}
