@@ -490,6 +490,7 @@ a {
 /*顾问团队*/
 .guwentuandui{
     margin: 20px auto;
+    text-align: center;
     .jigou{
         .item {
             position: relative;
@@ -528,6 +529,7 @@ a {
                 overflow: auto;
                 padding-top: 20px;
                 color: #999;
+                text-align: left;
                 h5{
                     font-weight: normal;
                 }
@@ -541,8 +543,35 @@ a {
     }
     .team{
         figure{
-            width: 300px;
+            display: inline-block;
+            width: 320px;
             background: #fff;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            img{
+                display: inline-block;
+                width: 160px;
+                height: 160px;
+                border-radius: 100px;
+            }
+            figcaption{
+                color: #999;
+                line-height:24px;
+            }
+            &:nth-child(1){
+               float: left;
+            }
+            &:nth-child(2){
+                float: right;
+            }
+            h5{
+                font-weight: normal;
+                color:#666;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 40px;
+            }
         }
+
     }
 }
