@@ -13,6 +13,9 @@ ul li {
 a {
     text-decoration: none;
 }
+.fr{
+    float: right;
+}
 .main-width{
     width: 1024px;
     margin: 0px auto;
@@ -102,6 +105,8 @@ a {
     >div{
         width: 50%;
         float: left;
+        box-sizing: border-box;
+        padding-left: 40px;
         h5{
             font-size: 16px;
             font-weight: normal;
@@ -165,6 +170,45 @@ a {
                 display: inline-block;
                 width: 400px;
                 margin: 20px 0;
+            }
+        }
+    }
+    .con-right{
+        .label{
+            height: 40px;
+            line-height: 40px;
+            color: #999;
+        }
+        input{
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            font-size: 12px;
+            text-indent: 4px;
+            &.phone{
+                margin-left: 30px;
+            }
+        }
+        textarea{
+            width: 430px;
+            border: 1px solid #ccc;
+        }
+        .button{
+            padding: 10px 0;
+            button{
+                display: inline-block;
+                height: 40px;
+                width: 200px;
+                border: none;
+                color: #fff;
+                background: #676568;
+                &:last-child{
+                    margin-left: 26px;
+                }
+                &.active{
+                    background: #cc3333;
+                }
             }
         }
     }
@@ -654,4 +698,62 @@ a {
 }
 .contact-us{
     margin: 20px auto;
+}
+.jincaishipin{
+    background: #fff;
+    .video{
+        background: #e8e8e8;
+        overflow: auto;
+        margin-bottom: 20px;
+        >div{
+            width: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            float: left;
+        }
+        .name{
+            text-align: center;
+            margin-top: 20px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            &.first{
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 4px;
+                    display: inline-block;
+                    width: 2px;
+                    height: 20px;
+                    background: #cc3333;
+                }
+            }
+        }
+        figure{
+            margin: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            background: #fff;
+            border-radius: 6px 6px 0 0;
+            box-shadow: 2px 2px 5px #666;
+            img{
+                display: inline-block;
+                width: 96%;
+                padding: 10px 0;
+            }
+            figcaption{
+                text-align: left;
+                color: #666;
+                span{
+                    font-size: 14px;
+                }
+                padding: 0 20px 20px;
+            }
+        }
+    }
+    .contact{
+        clear: both;
+    }
 }
